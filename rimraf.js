@@ -29,7 +29,7 @@ function rimraf (p, opts, cb) {
         // try again, with the same exact callback as this one.
         return setTimeout(function () {
           rimraf_(p, opts, CB)
-        })
+        }, time)
       }
 
       // this one won't happen if graceful-fs is used.

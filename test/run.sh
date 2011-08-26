@@ -3,7 +3,7 @@ set -e
 for i in test-*.js; do
   echo -n $i ...
   bash setup.sh
-  node $i
+  time node $i
   ! [ -d target ]
   echo "pass"
 done
