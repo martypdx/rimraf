@@ -85,7 +85,7 @@ function clobberTest (p, s, opts, cb) {
   else realish(p, next)
 
   function next (er, rp) {
-    if (er) return rm_(p, s, cb)
+    if (er) return rm_(p, s, opts, cb)
     if (rp.indexOf(gently) !== 0) return clobberFail(p, gently, cb)
     else return rm_(p, s, opts, cb)
   }
