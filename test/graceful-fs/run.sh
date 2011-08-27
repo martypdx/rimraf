@@ -1,5 +1,5 @@
 #!/bin/bash
-rimraf="rimraf"
+rimraf="oo-rimraf"
 target="target"
 for i in test-*-pass.js; do
     echo -n $i ...
